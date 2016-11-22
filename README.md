@@ -28,6 +28,6 @@ Developed with Visual Studio 2015 Community
 |Built-in Filters|Uppercase / lowercase, currency, date (medium,mediumDate), json, limitTo, orderBy, filter|
 |Custom Filters| Replacing int value for a string literal|
 |Validation|required, ngPattern, classes|
-|Built-in Services|$http, $anchorScroll, $cacheFactory|
+|Built-in Services|$http, $anchorScroll, $cacheFactory, $compile|
 |Custom Services|Data service that accesses a dotneet web api service, cache servive, gravatar service|
 
