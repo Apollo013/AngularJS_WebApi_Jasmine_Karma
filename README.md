@@ -26,7 +26,7 @@ Developed with Visual Studio 2015 Community
 |-------|-----------|
 |NG-Directives|ngApp, ngCloak, ngClick, ngHide, ngShow, ngBind, ngModel, ngController, ngSrc, ngNonBindable|
 |Built-in Filters|Uppercase / lowercase, currency, date (medium,mediumDate), json, limitTo, orderBy, filter|
-|Custom Filters| Replacing int value for a string literal|
+|Custom Filters| Displaying a string literal in place of an integer|
 |Validation|required, ngPattern, classes|
 |Built-in Services|$http, $anchorScroll, $cacheFactory, $compile|
 |Custom Services|Data service that accesses a dotneet web api service, cache servive, gravatar service|
