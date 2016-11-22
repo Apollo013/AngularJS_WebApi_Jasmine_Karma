@@ -2,7 +2,7 @@
 
 ---
 
-A refresher app that takes a look under the hood and covers a wide range of features & functionality concerning AngularJS, Web Api 2 & Karma. (under development)
+A refresher app that takes a look under the hood to cover a wide range of features & functionality concerning AngularJS, Web Api 2 & Karma. (under development)
 
 ---
 
@@ -28,6 +28,6 @@ Developed with Visual Studio 2015 Community
 |Built-in Filters|Uppercase / lowercase, currency, date (medium,mediumDate), json, limitTo, orderBy, filter|
 |Custom Filters| Displaying a string literal in place of an integer|
 |Validation|required, ngPattern, classes|
-|Built-in Services|$http, $anchorScroll, $cacheFactory, $compile|
+|Built-in Services|$http, $anchorScroll, $cacheFactory, $compile, $locale, $timeout, $interval|
 |Custom Services|Data service that accesses a dotnet web api service, cache servive, gravatar service|
 
