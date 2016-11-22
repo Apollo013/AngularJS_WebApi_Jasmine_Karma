@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="eventsApp">
+<head>
+    <title>Events App</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <base href="/app">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/app.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="EventDetailsView.html">
+                        <img alt="Brand" src="img/angularjs-logo.jpg" height="50">
+                    </a>
+                </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav"></ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div ng-controller="CacheController" style="padding:20px;">
+            <div class="row">
+                <label class="col-md-2">key:</label> <input type="text" ng-model="key" class="col-md-4" />
+            </div>
+            <div class="row">
+                <label class="col-md-2">value:</label> <input type="text" ng-model="value" class="col-md-4" />
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-primary" ng-click="addToCache(key, value)">Add To Cache</button><br />
+            </div>
+
+
+
+            <br />
+            <br />
+            <input type="text" ng-model="keyToRead" /><br />
+            <h3>Value from cache: {{readFromCache(keyToRead)}}</h3>
+            <h3>Cache Stats: {{getCacheStats()}}</h3>
+        </div>
+    </div>
+
+    <script src="lib/jquery-3.1.1.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="lib/angular/angular-resource.min.js"></script>
+    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-sanitize.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/services/CacheService.js"></script>
+    <script src="js/controllers/CacheController.js"></script>
+
+</body>
+</html>

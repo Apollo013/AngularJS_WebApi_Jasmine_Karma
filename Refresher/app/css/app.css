@@ -4,6 +4,9 @@ body{
     color: #fff;
 }
 
+input[type=text]{
+    color: #000;
+}
 ul{
     list-style: none;
 }

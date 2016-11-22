@@ -1,8 +1,8 @@
 ﻿'use strict';
 
-eventsApp.controller('EventController', ['$scope', 'EventDataService',
+eventsApp.controller('EventController', ['$scope', 'EventDataService', '$anchorScroll',
 
-    function EventController($scope, EventDataService) {
+    function EventController($scope, EventDataService, $anchorScroll) {
 
         $scope.snippet = '<span style="color:red !important;">Hi There</span>';
         $scope.myStyle = {color:'red'};
@@ -12,7 +12,11 @@ eventsApp.controller('EventController', ['$scope', 'EventDataService',
         $scope.sortOrder = 'name';
         $scope.voteOrder = '-upVoteCount'
         $scope.event = {};
-        
+        //bottomOfPage
+        $scope.scrollToBottom = function () {
+            $anchorScroll();
+        }
+
         $scope.upVoteSession = function (session) {
             session.upVoteCount++;
         }

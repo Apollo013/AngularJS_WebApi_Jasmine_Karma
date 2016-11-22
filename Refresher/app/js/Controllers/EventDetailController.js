@@ -9,7 +9,7 @@ eventsApp.controller('EventDetailController', ['$scope', 'EventDataService',
             if (newEventForm.$valid) {
                 EventDataService.save($scope.event).then(
                     function (response) {
-                        window.location = "/EventDetails.html";
+                        window.location = "/EventDetailsView.html";
                     }
                 );
 
@@ -19,7 +19,7 @@ eventsApp.controller('EventDetailController', ['$scope', 'EventDataService',
         }
 
         $scope.cancelEvent = function () {
-           window.location = "/EventDetails.html";
+            window.location = "/EventDetailsView.html";
         }
 
         var init = function () {
