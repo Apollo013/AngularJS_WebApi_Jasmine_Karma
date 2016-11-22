@@ -1,0 +1,60 @@
+{
+  "id": 2,
+  "name": "Code Camp",
+  "date": "03/15/2013",
+  "time": "9:00am - 5:00pm",
+  "location": {
+
+    "address": "123 Wall St",
+    "city": "New York",
+    "province": "NY"
+  },
+  "imageUrl": "http://blog.laptopmag.com/wpress/wp-content/uploads/2012/08/Code-Camp_sf.jpg",
+  "sessions": [
+
+    {
+      "upVoteCount": 0,
+      "name": "How To Program",
+      "duration": 1,
+      "abstract": "this session will teach you to program",
+      "creatorName": "Jim Cooper",
+      "level": "advanced",
+      "price": 20.00
+    },
+    {
+      "upVoteCount": 0,
+      "name": "How To Dance",
+      "duration": 4,
+      "abstract": "this session will teach you to dance",
+      "creatorName": "Jim Cooper",
+      "level": "introductory",
+      "price": 20.00
+    },
+    {
+      "upVoteCount": 0,
+      "name": "How To Sing",
+      "duration": 1,
+      "abstract": "this session will teach you to sing  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum  Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum Lorum Ipsum FooBarsum ",
+      "level": "advanced",
+      "creatorName": "Bob",
+      "price": 20.00
+    },
+    {
+      "duration": 2,
+      "name": "How To Be Awesome",
+      "abstract": "this course will make me rich",
+      "creatorName": "Bob",
+      "upVoteCount": 0,
+      "level": "introductory",
+      "price": 20.00
+    },
+    {
+      "duration": 2,
+      "name": "How to build Angular Applications",
+      "abstract": "This session is all about angular applications",
+      "creatorName": "Bob",
+      "upVoteCount": 0,
+      "level": "intermediate",
+      "price": 20.00
+    }
+  ]}
