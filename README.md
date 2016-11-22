@@ -29,5 +29,5 @@ Developed with Visual Studio 2015 Community
 |Custom Filters| Displaying a string literal in place of an integer|
 |Validation|required, ngPattern, classes|
 |Built-in Services|$http, $anchorScroll, $cacheFactory, $compile|
-|Custom Services|Data service that accesses a dotneet web api service, cache servive, gravatar service|
+|Custom Services|Data service that accesses a dotnet web api service, cache servive, gravatar service|
 
