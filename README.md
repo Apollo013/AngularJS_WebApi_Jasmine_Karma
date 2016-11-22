@@ -14,6 +14,7 @@ Developed with Visual Studio 2015 Community
 |Tech|
 |----|
 |C#|
+|Web Api 2|
 |AngularJS|
 |Karma|
 |Json|
@@ -28,6 +29,6 @@ Developed with Visual Studio 2015 Community
 |Built-in Filters|Uppercase / lowercase, currency, date (medium,mediumDate), json, limitTo, orderBy, filter|
 |Custom Filters| Displaying a string literal in place of an integer|
 |Validation|required, ngPattern, classes|
-|Built-in Services|$http, $anchorScroll, $cacheFactory, $compile, $locale, $timeout, $interval|
+|Built-in Services|$http, $anchorScroll, $cacheFactory, $compile, $locale, $timeout, $interval, $filter|
 |Custom Services|Data service that accesses a dotnet web api service, cache servive, gravatar service|
 
