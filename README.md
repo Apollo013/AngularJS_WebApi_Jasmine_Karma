@@ -16,7 +16,11 @@ Developed with Visual Studio 2015 Community
 |C#|
 |Web Api 2|
 |AngularJS|
+|NodeJS / ExpressJS|
+|jQuery|
 |Karma|
+|Jasmine|
+|Sinon.js|
 |Json|
 |[Gravatar](https://en.gravatar.com/)|
 
