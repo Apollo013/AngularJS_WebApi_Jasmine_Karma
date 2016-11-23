@@ -29,7 +29,7 @@ Developed with Visual Studio 2015 Community
 ### Features
 |Feature|Description|
 |-------|-----------|
-|NG-Directives|ngApp, ngCloak, ngClick, ngHide, ngShow, ngBind, ngModel, ngController, ngSrc, ngNonBindable|
+|Built-in Directives|ngApp, ngCloak, ngClick, ngHide, ngShow, ngBind, ngModel, ngController, ngSrc, ngNonBindable|
 |Built-in Filters|Uppercase / lowercase, currency, date (medium,mediumDate), json, limitTo, orderBy, filter|
 |Custom Filters| Displaying a string literal in place of an integer|
 |Validation|required, ngPattern, classes|
