@@ -1,14 +1,16 @@
-//jshint strict: false
 module.exports = function(config) {
   config.set({
 
-    basePath: './',
+    basePath: './app',
 
     files: [
-      '../../app/lib/angular/angular.min.js',
-      '../../app/lib/angular/angular-route.min.js',
-      '../../app/lib/angular/angular-mocks.js',
-      '../unit/view*.js',
+        JASMINE,
+        JASMINE_ADAPTER,
+        "/lib/jquery-3.1.1.min.js" ,
+        "/lib/angular/angular.min.js",
+        "/lib/angular/angular-*.min.js",
+        "/lib/angular/angular-mocks.js",
+        "/lib/angular/sinon-1.17.6.js" 
     ],
 
     autoWatch: true,
