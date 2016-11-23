@@ -30,37 +30,21 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <div ng-controller="CacheController" style="padding:20px;">
-            <div class="row">
-                <label class="col-md-2">key:</label> <input type="text" ng-model="key" class="col-md-4" />
-            </div>
-            <div class="row">
-                <label class="col-md-2">value:</label> <input type="text" ng-model="value" class="col-md-4" />
-            </div>
-            <div class="row">
-                <button type="button" class="btn btn-primary" ng-click="addToCache(key, value)">Add To Cache</button><br />
-            </div>
-
-            <br />
-            <br />
-            <input type="text" ng-model="keyToRead" /><br />
-            <h3>Value from cache: {{readFromCache(keyToRead)}}</h3>
-            <h3>Cache Stats: {{getCacheStats()}}</h3>
-        </div>
+    <div class="container" ng-controller="CookiesController">
+        <button type="button" class="btn btn-primary" ng-click="saveCookie(event)">Store Cookie</button>
+        <button type="button" class="btn btn-primary" ng-click="getCookie()">Get Cookie</button>
+        <button type="button" class="btn btn-primary" ng-click="removeCookie()">Remove Cookie</button>
     </div>
 
     <script src="lib/jquery-3.1.1.min.js"></script>
     <script src="lib/underscore-min.js"></script>
     <script src="lib/bootstrap.min.js"></script>
     <script src="lib/angular/angular.min.js"></script>
-    <script src="lib/angular/angular-resource.min.js"></script>
-    <script src="lib/angular/angular-route.min.js"></script>
+    <script src="lib/angular/angular-cookies.min.js"></script>
     <script src="lib/angular/angular-sanitize.min.js"></script>
 
     <script src="js/app.js"></script>
-    <script src="js/services/CacheService.js"></script>
-    <script src="js/controllers/CacheController.js"></script>
+    <script src="js/controllers/CookiesController.js"></script>
 
 </body>
 </html>
