@@ -39,5 +39,5 @@ Developed with Visual Studio 2015 Community
 |Routing| $locationProvider, $routeProvider & $routeParams|
 |CORS| Server side |
 |Attribute Routing| Server side |
-
+|File IO| Server side with Json |
 
