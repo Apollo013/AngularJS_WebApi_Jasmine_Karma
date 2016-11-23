@@ -37,4 +37,7 @@ Developed with Visual Studio 2015 Community
 |Custom Services|Data service that accesses a web api service & a gravatar service|
 |Caching| $cacheFactory in a cache service|
 |Routing| $locationProvider, $routeProvider & $routeParams|
+|CORS| Server side |
+|Attribute Routing| Server side |
+
 
