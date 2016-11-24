@@ -1,7 +1,7 @@
 ﻿'use strict';
 
-eventsApp.factory('EventDataService', ['$http', '$log', 
-    function ($http, $log) {
+eventsApp.factory('EventDataService', ['$http', '$log', '$timeout',
+    function ($http, $log, $timeout) {
 
         var baseUrl = 'http://localhost:55015/events';
 

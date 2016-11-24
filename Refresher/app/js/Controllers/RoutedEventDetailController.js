@@ -1,7 +1,7 @@
 ﻿'use strict';
 
-eventsApp.controller('EventDetailController', ['$scope', 'EventDataService', '$routeParams',
-    function ($scope, EventDataService, $routeParams) {
+eventsApp.controller('EventDetailController', ['$scope', 'EventDataService', '$routeParams', '$route',
+    function ($scope, EventDataService, $routeParams, $route, event) {
 
         $scope.event = {};
 
@@ -16,11 +16,11 @@ eventsApp.controller('EventDetailController', ['$scope', 'EventDataService', '$r
             } else {
                 window.alert('not valid');
             }
-        }
+        };
 
         $scope.cancelEvent = function () {
             window.location = "/events";
-        }
+        };
 
         var init = function () {
             var id = $routeParams.eventid;
@@ -32,8 +32,13 @@ eventsApp.controller('EventDetailController', ['$scope', 'EventDataService', '$r
                     $log.warn(errorText);
                 }
             );
-        }
+        };
 
-        init();
+        var initResolved = function () {
+            $scope.event = $route.current.locals.event;
+        };
+        initResolved();
+
+        //init();
     }
 ]);

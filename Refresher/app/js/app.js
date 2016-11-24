@@ -12,7 +12,21 @@ var eventsApp = angular.module('eventsApp', ['ngSanitize', 'ngCookies', 'ngRoute
 
         .when('/event/:eventid', {
             templateUrl: 'partials/event-detail.html',
-            controller: 'EventDetailController'
+            controller: 'EventDetailController',
+            resolve: {
+                event: function ($q, $route, EventDataService) {
+                    var deferred = $q.defer();
+                    EventDataService.get($route.current.params.eventid).then (
+                        function (response) {
+                            deferred.resolve(response);
+                        },
+                        function (error) {
+                            deferred.reject(error);
+                        }
+                    )
+                    return deferred.promise;
+                }
+            }
         })
 
         .otherwise({ redirectTo: '/events' });
