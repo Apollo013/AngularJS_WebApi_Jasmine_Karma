@@ -29,10 +29,15 @@ Developed with Visual Studio 2015 Community
 ### Features
 |Feature|Description|
 |-------|-----------|
-|NG-Directives|ngApp, ngCloak, ngClick, ngHide, ngShow, ngBind, ngModel, ngController, ngSrc, ngNonBindable|
+|Built-in Directives|ngApp, ngCloak, ngClick, ngHide, ngShow, ngBind, ngModel, ngController, ngSrc, ngNonBindable|
 |Built-in Filters|Uppercase / lowercase, currency, date (medium,mediumDate), json, limitTo, orderBy, filter|
 |Custom Filters| Displaying a string literal in place of an integer|
 |Validation|required, ngPattern, classes|
-|Built-in Services|$http, $anchorScroll, $cacheFactory, $compile, $locale, $timeout, $interval, $filter|
-|Custom Services|Data service that accesses a web api service, a caching service & a gravatar service|
+|Built-in Services|$http, $anchorScroll, $compile, $locale, $timeout, $interval, $filter|
+|Custom Services|Data service that accesses a web api service & a gravatar service|
+|Caching| $cacheFactory in a cache service|
+|Routing| $locationProvider, $routeProvider & $routeParams|
+|CORS| Server side |
+|Attribute Routing| Server side |
+|File IO| Server side with Json |
 
