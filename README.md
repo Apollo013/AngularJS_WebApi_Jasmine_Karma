@@ -33,10 +33,10 @@ Developed with Visual Studio 2015 Community
 |Built-in Filters|Uppercase / lowercase, currency, date (medium,mediumDate), json, limitTo, orderBy, filter|
 |Custom Filters| Displaying a string literal in place of an integer|
 |Validation|required, ngPattern, classes|
-|Built-in Services|$http, $anchorScroll, $compile, $locale, $timeout, $interval, $filter|
+|Built-in Services|$http, $anchorScroll, $compile, $locale, $timeout, $interval, $filter, $location|
 |Custom Services|Data service that accesses a web api service & a gravatar service|
 |Caching| $cacheFactory in a cache service|
-|Routing| $locationProvider, $routeProvider & $routeParams|
+|Routing| $locationProvider, $routeProvider & $routeParams, $route|
 |CORS| Server side |
 |Attribute Routing| Server side |
 |File IO| Server side with Json |
