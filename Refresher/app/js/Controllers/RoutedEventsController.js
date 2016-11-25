@@ -1,13 +1,18 @@
 ﻿'use strict';
 
-eventsApp.controller('EventsController', ['$scope', 'EventDataService', '$anchorScroll',
+eventsApp.controller('RoutedEventsController', ['$scope','$location', 'EventDataService','$http', '$q',
 
-    function EventController($scope, EventDataService, $anchorScroll) {
+    function EventController($scope, $location, EventDataService, $http, $q) {
 
         $scope.myclass = 'blue';
         $scope.sortOrder = 'name';
         $scope.voteOrder = '-upVoteCount'
         $scope.event = {};
+
+        $scope.events = EventDataService.getAll();
+        //EventDataService.getAll().then(function (data) {
+        //    $scope.events = data;
+        //});
 
         $scope.upVoteSession = function (session) {
             session.upVoteCount++;
@@ -20,14 +25,26 @@ eventsApp.controller('EventsController', ['$scope', 'EventDataService', '$anchor
             }
         }
 
-        var init = function () {
+        $scope.navigateToDetail = function(eventid){
+            $location.url('/event/' + eventid);
+        }
+
+
+        $scope.init = function (eventid) {
+            $scope.event = EventDataService.get(1);
+            /*
             EventDataService.get(1).then(
                 function (data) {
                     $scope.event = data;
                 }
             );
-        }
+            */
+        };
 
-        init();
+        //var init = function () {
+
+        //}
+
+        $scope.init();
     }
 ]);

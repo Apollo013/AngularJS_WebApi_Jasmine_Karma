@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-eventsApp.controller('EventDetailController', ['$scope', 'EventDataService', '$routeParams', '$route',
+eventsApp.controller('RoutedEventDetailController', ['$scope', 'EventDataService', '$routeParams', '$route',
     function ($scope, EventDataService, $routeParams, $route, event) {
 
         $scope.event = {};

@@ -13,6 +13,24 @@ eventsApp.factory('EventDataService', ['$http', '$log', '$timeout',
                     url: baseUrl + '/' + id
                 }
 
+                $http(config).then(
+                    function (response) {
+                        $log.info(response);
+                        return response.data;
+                    },
+                    function (errorText, status, headers, config) {
+                        $log.warn(errorText);
+                        return errorText;
+                    }
+                );
+            },
+
+            getAll: function () {
+                var config = {
+                    method: 'GET',
+                    url: baseUrl
+                }
+
                 return $http(config).then(
                     function (response) {
                         $log.info(response);

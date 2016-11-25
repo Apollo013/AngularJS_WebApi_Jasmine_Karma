@@ -7,12 +7,12 @@ var eventsApp = angular.module('eventsApp', ['ngSanitize', 'ngCookies', 'ngRoute
 
         $routeProvider.when('/events', {
             templateUrl: 'partials/events.html',
-            controller: 'EventsController'
+            controller: 'RoutedEventsController'
         })
 
         .when('/event/:eventid', {
             templateUrl: 'partials/event-detail.html',
-            controller: 'EventDetailController',
+            controller: 'RoutedEventDetailController',
             resolve: {
                 event: function ($q, $route, EventDataService) {
                     var deferred = $q.defer();
