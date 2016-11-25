@@ -1,5 +1,6 @@
 ﻿using Refresher.WebApi.Models;
 using Refresher.WebApi.Repository;
+using System.Collections.Generic;
 using System.Web.Http;
 
 namespace Refresher.WebApi.Controllers
@@ -58,6 +59,28 @@ namespace Refresher.WebApi.Controllers
                 return BadRequest(ex.Message);
             }
             return Ok();
+        }
+
+
+        [Route("")]
+        [HttpGet]
+        public IHttpActionResult Get()
+        {
+            List<Event> events = new List<Event>(); ;
+
+            try
+            {
+                events.Add(_serializer.ParseSingleEntityFile(BuildFileName(1)));
+                events.Add(_serializer.ParseSingleEntityFile(BuildFileName(2)));
+                events.Add(_serializer.ParseSingleEntityFile(BuildFileName(3)));
+                events.Add(_serializer.ParseSingleEntityFile(BuildFileName(4)));
+            }
+            catch (System.Exception ex)
+            {
+
+                return BadRequest(ex.Message);
+            }
+            return Ok(events);
         }
 
         private string BuildFileName(int id)

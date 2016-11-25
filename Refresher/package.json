@@ -19,8 +19,6 @@
   },
   "scripts": {
     "start": "node server",
-
-    "pretest": "npm install",
     "test": "karma start tests/config/karma.conf.js",
     "test-single-run": "karma start tests/config/karma.conf.js --single-run",
 
