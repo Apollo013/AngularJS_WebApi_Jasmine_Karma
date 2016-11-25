@@ -18,8 +18,8 @@ Developed with Visual Studio 2015 Community
 |AngularJS|
 |NodeJS / ExpressJS|
 |jQuery|
-|Karma|
 |Jasmine|
+|Karma|
 |Sinon.js|
 |Json|
 |[Gravatar](https://en.gravatar.com/)|
@@ -40,4 +40,4 @@ Developed with Visual Studio 2015 Community
 |CORS| Server side |
 |Attribute Routing| Server side |
 |File IO| Server side with Json |
-
+|Continuous integration| Implemented with Jasmine & Karma|
