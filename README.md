@@ -2,7 +2,7 @@
 
 ---
 
-A refresher app that takes a look under the hood to cover a wide range of features & functionality concerning AngularJS, Web Api 2 & Karma. (under development)
+A look at a wide range of features & functionality concerning AngularJS, Web Api 2, Jasmine & Karma. (under development)
 
 ---
 
